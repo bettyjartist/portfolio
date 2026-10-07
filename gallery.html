@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>gallery — bettyj</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Sansita&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="gallery">
+  <header class="navbar glass" data-glass="desktop">
+    <a class="nav-logo" href="index.html" aria-label="bettyj - menu" aria-expanded="false">bettyj</a>
+    <nav class="nav-links glass" data-glass="panel" aria-label="main">
+      <a class="nav-link l-home" href="index.html">home</a>
+      <a class="nav-link l-about" href="about.html">about me</a>
+      <a class="nav-link l-gallery is-active" href="gallery.html" aria-current="page">gallery</a>
+      <a class="nav-link l-contact" href="contact.html">contact</a>
+    </nav>
+  </header>
+
+  <main class="frame glass" data-glass>
+    <div class="wallpaper" aria-hidden="true"></div>
+    <div class="g-scroll">
+      <div class="g-head"><span class="g-h1">departures</span><span class="g-h2">7 flights</span></div>
+      <div class="g-cols"></div>
+    </div>
+  </main>
+
+  <!-- floating project layer: gallery stays underneath, blurred -->
+  <div class="overlay" role="dialog" aria-modal="true" aria-label="project details" aria-hidden="true">
+    <div class="ov-dim"></div>
+    <div class="ov-panel">
+      <button class="ov-close" type="button" aria-label="close">✕</button>
+      <div class="ov-scroll"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

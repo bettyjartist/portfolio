@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>about me — bettyj</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Sansita&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="about">
+  <header class="navbar glass" data-glass="desktop">
+    <a class="nav-logo" href="index.html" aria-label="bettyj - menu" aria-expanded="false">bettyj</a>
+    <nav class="nav-links glass" data-glass="panel" aria-label="main">
+      <a class="nav-link l-home" href="index.html">home</a>
+      <a class="nav-link l-about is-active" href="about.html" aria-current="page">about me</a>
+      <a class="nav-link l-gallery" href="gallery.html">gallery</a>
+      <a class="nav-link l-contact" href="contact.html">contact</a>
+    </nav>
+  </header>
+
+  <main class="frame glass" data-glass aria-hidden="true">
+    <div class="wallpaper"></div>
+  </main>
+
+  <!-- roller never changes; trays ride on it -->
+  <div class="roller" aria-hidden="true"><img src="assets/images/rollers.png" alt=""></div>
+
+  <!-- black frame, red stroke -->
+  <div class="band" aria-hidden="true"></div>
+
+  <div class="stage" aria-live="polite">
+    <div class="tray" data-i="0"><img class="t-base" src="assets/images/khay_1.png" alt=""><img class="t-in" src="assets/images/khay_1.5.png" alt=""></div>
+    <div class="tray" data-i="1"><img class="t-base" src="assets/images/khay_2.png" alt=""><img class="t-in" src="assets/images/khay_2.5.png" alt=""></div>
+    <div class="tray" data-i="2"><img class="t-base" src="assets/images/khay_3.png" alt=""><img class="t-in" src="assets/images/khay_3.5.png" alt=""></div>
+
+    <h1 class="tx tx-title">personal<br>information</h1>
+    <h2 class="tx tx-title">what’s in<br>my bag?</h2>
+    <h2 class="tx tx-title">skills<br>beyond<br>design</h2>
+
+    <div class="tx tx-body">
+      <p>hi, i’m bettyj - a 3d environment artist based in ho chi minh city, vietnam.</p>
+      <p>i’m a design student at rmit vietnam with more than 2 years of experiences in 3d design and digital arts.</p>
+    </div>
+    <div class="tx tx-body">
+      <p>the things i carry, create, and get inspired by.</p>
+      <p>headphones + earphones<br>life sounds better with music.</p>
+      <p>diary / sketchbook<br>i write or sketch whenever inspiration hits.</p>
+      <p>fragrance<br>a little obsessed with smelling good.</p>
+      <p>convex mirror<br>for absolutely no reason.<br>i just like looking.</p>
+    </div>
+    <div class="tx tx-body">
+      <p>i love reading books and keeping a diary. these hobbies help me stay calm, focused, and creative.</p>
+      <p>i’m also passionate about dancing, especially house and k-pop. dancing helps me express myself and let my imagination soar through digital art.</p>
+    </div>
+  </div>
+
+  <p class="scroll-hint">scroll</p>
+  <div class="about-scroll" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

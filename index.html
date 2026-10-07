@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>bettyj — portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Sansita&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <header class="navbar glass" data-glass="desktop">
+    <a class="nav-logo" href="index.html" aria-label="bettyj - menu" aria-expanded="false">bettyj</a>
+    <nav class="nav-links glass" data-glass="panel" aria-label="main">
+      <a class="nav-link l-home is-active" href="index.html" aria-current="page">home</a>
+      <a class="nav-link l-about" href="about.html">about me</a>
+      <a class="nav-link l-gallery" href="gallery.html">gallery</a>
+      <a class="nav-link l-contact" href="contact.html">contact</a>
+    </nav>
+  </header>
+
+  <main class="frame glass" data-glass>
+    <div class="wallpaper" aria-hidden="true"></div>
+    <div class="ruler-horizontal" aria-hidden="true"></div>
+    <div class="ruler-vertical" aria-hidden="true"></div>
+
+    <p class="hero-text hero-welcome">welcome to</p>
+    <h1 class="hero-text hero-name">bettyj’s</h1>
+    <p class="hero-text hero-portfolio">portfolio</p>
+
+    <!-- the 3 red scan frames are children of the bag, sized in % of it -->
+    <div class="bag">
+      <img class="bag-img" src="assets/images/hero_bag.png" alt="x-ray of bettyj's bag">
+    </div>
+
+    <!-- same box as the bag, sits above the rulers so the frames stay clickable -->
+    <div class="bag bag-ui">
+      <svg class="scan-lines" viewBox="0 0 470 664" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="420" y1="472" x2="608" y2="479"/>
+        <line x1="-114" y1="540" x2="29" y2="552"/>
+        <line x1="462" y1="571" x2="652" y2="617"/>
+      </svg>
+
+      <a class="scan scan-gallery" href="gallery.html" aria-label="gallery"></a>
+      <a class="scan scan-contact" href="contact.html" aria-label="contact"></a>
+      <a class="scan scan-about" href="about.html" aria-label="about me"></a>
+
+      <a class="scan-label label-about" href="about.html">about me</a>
+      <a class="scan-label label-gallery" href="gallery.html">gallery</a>
+      <a class="scan-label label-contact" href="contact.html">contact</a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
